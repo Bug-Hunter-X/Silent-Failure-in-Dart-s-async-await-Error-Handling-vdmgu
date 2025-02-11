@@ -1,0 +1,3 @@
+# Silent Failure in Dart's async/await Error Handling
+
+This example demonstrates a common error in Dart's asynchronous programming where exceptions are caught but not properly handled, leading to silent failures in applications.  The `fetchData` function fetches data from an API.  If an error occurs, the error is caught and printed, but not re-thrown.  This means the calling function might not know about the error and will continue execution as if nothing happened. This can be extremely difficult to debug.  The solution demonstrates how to properly handle or re-throw exceptions to avoid this.
